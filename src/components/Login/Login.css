@@ -3,3 +3,9 @@
     flex-direction: column;
     align-items: center;
 }
+
+ .login-wrapper button{
+
+    width: 157px;
+    margin-top: 23px;
+ }

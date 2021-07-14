@@ -6,6 +6,7 @@ import Login from '../Login/Login';
 import Preferences from '../Preferences/Preferences';
 import useToken from './useToken';
 
+import LogoutButton from '../Login/LogoutButton'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
+      <LogoutButton></LogoutButton>
     </div>
   );
 }

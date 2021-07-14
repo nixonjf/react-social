@@ -57,23 +57,23 @@ export default function Login( { setToken }) {
 
     }
 
-    return(
+    return(    <div> 
             <div className="login-wrapper">
-                <h1>Please Log In</h1>
+                <h1>Log In</h1>
                 <form onSubmit={handleSubmit}>
                     <label>
-                        <p>Username</p>
-                        <input type="text" onChange={e => setUserName(e.target.value)} />
+                        <p> </p>
+                        <input type="text" placeholder="Email" onChange={e => setUserName(e.target.value)} />
                     </label>
                     <label>
-                        <p>Password</p>
-                        <input type="password" onChange={e => setPassword(e.target.value)} />
+                        <p> </p>
+                        <input type="password"  placeholder="Password"  onChange={e => setPassword(e.target.value)} />
                     </label>
                     <div>
                         <button type="submit">Submit</button>
                     </div>
                 </form>
-                <div> 
+                
                     <SocialButton
                         provider='facebook'
                         appId='172281281621041'
@@ -82,9 +82,9 @@ export default function Login( { setToken }) {
                         >
                         Login with Facebook
                     </SocialButton>
-                </div>
+                 
             </div>
-
+ </div>
             )
 }
 
